@@ -13,6 +13,9 @@
         <activity android:name=".databinding.DataBindingActivity"
             android:exported="false"/>
 
+        <activity android:name=".livedata.LiveDataActivity"
+            android:exported="false"/>
+
         <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

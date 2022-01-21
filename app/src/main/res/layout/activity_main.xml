@@ -17,5 +17,15 @@
             android:text="@string/dataBindingText"
             android:textSize="15sp"/>
 
+        <Button
+            android:id="@+id/liveDataBtn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dataBindingBtn"
+            android:text="@string/liveDataText"
+            android:textSize="15sp"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.example.jetpackpractice.databinding.ActivityMainBinding
 import com.example.jetpackpractice.databinding.DataBindingActivity
+import com.example.jetpackpractice.livedata.LiveDataActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,5 +20,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,DataBindingActivity::class.java)
             startActivity(intent)
         }
+
+        binding.liveDataBtn.setOnClickListener {
+            val intent = Intent(this,LiveDataActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
