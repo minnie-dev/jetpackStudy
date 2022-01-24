@@ -16,6 +16,9 @@
         <activity android:name=".livedata.LiveDataActivity"
             android:exported="false"/>
 
+        <activity android:name=".navigation.NaviActivity"
+            android:exported="false"/>
+
         <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

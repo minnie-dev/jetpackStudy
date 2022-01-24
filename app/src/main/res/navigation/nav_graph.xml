@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/firstNaviFragment">
+
+    <fragment
+        android:id="@+id/firstNaviFragment"
+        android:name="com.example.jetpackpractice.navigation.FirstNaviFragment"
+        android:label="FirstFragment"
+        tools:layout="@layout/fragment_firstnavi" >
+        <action
+            android:id="@+id/action_firstNaviFragment_to_secondNaviFragment"
+            app:destination="@id/secondNaviFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/secondNaviFragment"
+        android:name="com.example.jetpackpractice.navigation.SecondNaviFragment"
+        android:label="SecondFragment"
+        tools:layout="@layout/fragment_secondnavi" >
+        <action
+            android:id="@+id/action_secondNaviFragment_to_ThirdNaviFragment"
+            app:destination="@id/ThirdNaviFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ThirdNaviFragment"
+        android:name="com.example.jetpackpractice.navigation.ThirdNaviFragment"
+        android:label="ThirdFragment"
+        tools:layout="@layout/fragment_thirdnavi" >
+        <action
+            android:id="@+id/action_ThirdNaviFragment_to_firstNaviFragment"
+            app:destination="@id/firstNaviFragment" />
+    </fragment>
+
+</navigation>

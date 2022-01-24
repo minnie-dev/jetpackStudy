@@ -7,6 +7,7 @@ import androidx.databinding.DataBindingUtil
 import com.example.jetpackpractice.databinding.ActivityMainBinding
 import com.example.jetpackpractice.databinding.DataBindingActivity
 import com.example.jetpackpractice.livedata.LiveDataActivity
+import com.example.jetpackpractice.navigation.NaviActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,6 +24,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.liveDataBtn.setOnClickListener {
             val intent = Intent(this,LiveDataActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.naviBtn.setOnClickListener {
+            val intent = Intent(this,NaviActivity::class.java)
             startActivity(intent)
         }
 
