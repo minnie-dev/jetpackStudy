@@ -3,4 +3,6 @@
     <string name="dataBindingText">dataBinding</string>
     <string name="liveDataText">LiveData</string>
     <string name="navigationText">Navigation</string>
+    <string name="pagingText">Paging</string>
+
 </resources>

@@ -38,5 +38,15 @@
             android:text="@string/navigationText"
             android:textSize="15sp"/>
 
+        <Button
+            android:id="@+id/pagingBtn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/naviBtn"
+            android:text="@string/pagingText"
+            android:textSize="15sp"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
