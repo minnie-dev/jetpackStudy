@@ -12,19 +12,28 @@ import com.example.jetpackpractice.databinding.ActivityPagingBinding
 class PagingActivity : AppCompatActivity() {
     private lateinit var binding : ActivityPagingBinding
     private lateinit var viewModel: MainViewModel
+    var responseTxt =""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_paging)
 
+        binding.activity = this@PagingActivity
         val repository = Repository()
         val viewModelFactory = MainViewModelFactory(repository)
         viewModel = ViewModelProvider(this,viewModelFactory).get(MainViewModel::class.java)
         viewModel.getPost()
         viewModel.myResponse.observe(this, Observer {
-            Log.d("Response",it.myUserId.toString())
-            Log.d("Response",it.id.toString())
-            Log.d("Response",it.title)
-            Log.d("Response",it.body)
+            if(it.isSuccessful){
+                Log.d("Response",it.body()?.myUserId.toString())
+                Log.d("Response",it.body()?.id.toString())
+                Log.d("Response", it.body()?.title!!)
+                Log.d("Response", it.body()?.body!!)
+                responseTxt = it.body()?.title!!
+            } else{
+                Log.d("Response",it.errorBody().toString())
+                responseTxt = it.code().toString()
+            }
+            binding.invalidateAll()
         })
     }
 }
