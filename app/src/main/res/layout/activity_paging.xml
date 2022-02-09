@@ -12,6 +12,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <EditText
+            android:id="@+id/retrofitEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/retrofitBtn"
+            android:autofillHints="입력해주세요" />
+
+        <Button
+            android:id="@+id/retrofitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toTopOf="@id/retrofitTxt"
+            />
+
         <TextView
             android:id="@+id/retrofitTxt"
             android:layout_width="match_parent"

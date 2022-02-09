@@ -7,6 +7,7 @@ import androidx.databinding.DataBindingUtil
 import com.example.jetpackpractice.databinding.ActivityMainBinding
 import com.example.jetpackpractice.databinding.DataBindingActivity
 import com.example.jetpackpractice.livedata.LiveDataActivity
+import com.example.jetpackpractice.mvvm.ContactActivity
 import com.example.jetpackpractice.navigation.NaviActivity
 import com.example.jetpackpractice.paging.PagingActivity
 
@@ -35,6 +36,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.pagingBtn.setOnClickListener {
             val intent = Intent(this,PagingActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.mvvmBtn.setOnClickListener {
+            val intent = Intent(this,ContactActivity::class.java)
             startActivity(intent)
         }
 

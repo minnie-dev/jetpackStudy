@@ -24,6 +24,12 @@
         <activity android:name=".paging.PagingActivity"
             android:exported="false"/>
 
+        <activity android:name=".mvvm.ContactActivity"
+            android:exported="false"/>
+
+        <activity android:name=".mvvm.AddActivity"
+            android:exported="false"/>
+
         <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
