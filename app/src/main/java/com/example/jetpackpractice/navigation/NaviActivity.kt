@@ -19,6 +19,7 @@ class NaviActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_navi)
         binding.lifecycleOwner = this
+        lateinit var navController : NavController
 
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment)
         navController = navHostFragment!!.findNavController()

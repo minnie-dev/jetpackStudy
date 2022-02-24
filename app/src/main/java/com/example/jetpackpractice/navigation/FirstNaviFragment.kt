@@ -20,7 +20,7 @@ class FirstNaviFragment : Fragment(){
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_firstnavi,container,false)
         binding.lifecycleOwner = this
 
