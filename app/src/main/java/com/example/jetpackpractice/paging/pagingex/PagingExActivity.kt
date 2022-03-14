@@ -38,7 +38,5 @@ class PagingExActivity : AppCompatActivity(){
         viewModel.result.observe(this, Observer {
             myAdapter.submitData(this.lifecycle,it)
         })
-
-
     }
 }
