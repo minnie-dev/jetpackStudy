@@ -24,6 +24,9 @@
         <activity android:name=".paging.PagingActivity"
             android:exported="false"/>
 
+        <activity android:name=".paging.pagingex.PagingExActivity"
+            android:exported="false"/>
+
         <activity android:name=".mvvm.ContactActivity"
             android:exported="false"/>
 

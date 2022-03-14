@@ -10,6 +10,8 @@ import com.example.jetpackpractice.livedata.LiveDataActivity
 import com.example.jetpackpractice.mvvm.ContactActivity
 import com.example.jetpackpractice.navigation.NaviActivity
 import com.example.jetpackpractice.paging.PagingActivity
+import com.example.jetpackpractice.paging.pagingex.PagingExActivity
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
+
 
         binding.dataBindingBtn.setOnClickListener {
             val intent = Intent(this,DataBindingActivity::class.java)
@@ -35,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.pagingBtn.setOnClickListener {
-            val intent = Intent(this,PagingActivity::class.java)
+            val intent = Intent(this,PagingExActivity::class.java)
             startActivity(intent)
         }
 
@@ -45,4 +48,38 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+    /*fun solution( s: String): String {
+        var answer = ""
+        val array : List<String> =  s.split(" ")
+        var appenStr =""
+
+        for(i in 0.. array.size-1){
+            if(array[i]!= " "){
+                answer = array[i][0].toUpperCase().toString()
+                var answerAfter = if (array[i].length>1)array[i].substring(1).toLowerCase()+" "
+                else  " "
+                appenStr+=(answer + answerAfter)
+            }
+        }
+        var sttt = ""
+        var arr = s.toLowerCase().split(" ").apply {
+            this.forEachIndexed { index, s ->
+                sttt += if (s.length > 1 && !s[0].equals(" ")){
+                    s[0].toUpperCase() + s.substring(1) + " "
+                }else if(s.length > 1 && s[0].equals(" ")){
+                    s[1].toUpperCase() + s.substring(2) + " "
+                }else if(s.length = 1 s[0].equals(" ")){
+                    ""
+                }else{
+                    s[0].toUpperCase() + " "
+                }
+            }
+
+        }
+        println(arr.size)
+
+        answer= sttt.substring(0,sttt.length-1)
+        return answer
+    }*/
 }
