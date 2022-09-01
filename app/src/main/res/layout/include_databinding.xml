@@ -5,7 +5,7 @@
     <data>
         <variable
             name="user"
-            type="com.example.jetpackpractice.databinding.DataBindingActivity" />
+            type="com.example.jetpackstudy.databinding.DataBindingActivity" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

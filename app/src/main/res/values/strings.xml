@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">JetpackPractice</string>
+    <string name="app_name">jetpackStudy</string>
     <string name="dataBindingText">dataBinding</string>
     <string name="liveDataText">LiveData</string>
     <string name="navigationText">Navigation</string>

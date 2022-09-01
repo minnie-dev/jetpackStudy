@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.jetpackpractice">
+    package="com.example.jetpackstudy">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -12,28 +12,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JetpackPractice">
 
-        <activity android:name=".databinding.DataBindingActivity"
+        <activity android:name="com.example.jetpackstudy.databinding.DataBindingActivity"
             android:exported="false"/>
 
-        <activity android:name=".livedata.LiveDataActivity"
+        <activity android:name="com.example.jetpackstudy.livedata.LiveDataActivity"
             android:exported="false"/>
 
-        <activity android:name=".navigation.NaviActivity"
+        <activity android:name="com.example.jetpackstudy.navigation.NaviActivity"
             android:exported="false"/>
 
-        <activity android:name=".paging.PagingActivity"
+        <activity android:name="com.example.jetpackstudy.paging.PagingActivity"
             android:exported="false"/>
 
-        <activity android:name=".paging.pagingex.PagingExActivity"
+        <activity android:name="com.example.jetpackstudy.paging.pagingex.PagingExActivity"
             android:exported="false"/>
 
-        <activity android:name=".mvvm.ContactActivity"
+        <activity android:name="com.example.jetpackstudy.mvvm.ContactActivity"
             android:exported="false"/>
 
-        <activity android:name=".mvvm.AddActivity"
+        <activity android:name="com.example.jetpackstudy.mvvm.AddActivity"
             android:exported="false"/>
 
-        <activity android:name=".MainActivity"
+        <activity android:name="com.example.jetpackstudy.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/firstNaviFragment"
-        android:name="com.example.jetpackpractice.navigation.FirstNaviFragment"
+        android:name="com.example.jetpackstudy.navigation.FirstNaviFragment"
         android:label="FirstFragment"
         tools:layout="@layout/fragment_firstnavi" >
         <action
@@ -16,7 +16,7 @@
 
     <fragment
         android:id="@+id/secondNaviFragment"
-        android:name="com.example.jetpackpractice.navigation.SecondNaviFragment"
+        android:name="com.example.jetpackstudy.navigation.SecondNaviFragment"
         android:label="SecondFragment"
         tools:layout="@layout/fragment_secondnavi" >
         <action
@@ -26,7 +26,7 @@
 
     <fragment
         android:id="@+id/ThirdNaviFragment"
-        android:name="com.example.jetpackpractice.navigation.ThirdNaviFragment"
+        android:name="com.example.jetpackstudy.navigation.ThirdNaviFragment"
         android:label="ThirdFragment"
         tools:layout="@layout/fragment_thirdnavi" >
         <action
